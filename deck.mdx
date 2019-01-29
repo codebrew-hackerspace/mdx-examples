@@ -1,5 +1,6 @@
 import { Head } from 'mdx-deck'
-import theme from 'mdx-deck/themes'
+export { default as yellow } from 'mdx-deck/themes';
+import { LiveCode } from 'mdx-deck-live-code';
 
 import Snippet from './Snippet'
 
@@ -8,3 +9,39 @@ import Snippet from './Snippet'
 ---
 
 <Snippet/>
+
+---
+
+
+<LiveCode
+	title="... and classes"
+	code={`class MyComp extends React.Component {
+  constructor(){
+    this.state = {
+    value: 'class'
+    };
+  }
+  render() {
+    return (
+      <div>
+        <p>
+					This is a {this.state.value} component!
+				</p>
+                <img src="https://i.kym-cdn.com/entries/icons/original/000/000/142/feelsgoodman.png"/>
+        
+        <input
+		  		onChange={
+			  		(e) => this.setState({value: e.target.value})
+					}
+		  		value={this.state.value}
+                   style={{fontSize: 30}}
+				/>
+      </div>
+	  );
+  }
+}`}
+	size="large"
+	editorProps={{ style: { fontSize: '1em', background: '#001628' } }}
+/>
+
+----

@@ -9,13 +9,14 @@
     "image": "mdx-deck screenshot deck.mdx",
     "help": "mdx-deck"
   },
-  "keywords": [],
-  "author": "Brent Jackson",
   "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^1.6.7"
   },
   "dependencies": {
+    "mdx-deck": "^1.8.2",
+    "mdx-deck-live-code": "^1.0.0",
+    "raw-loader": "^1.0.0",
     "react": "^16.7.0",
     "react-highlight": "^0.12.0"
   }

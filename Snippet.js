@@ -3,6 +3,8 @@ import React, { Component } from "react";
 
 import Highlight from "react-highlight";
 
+
+
 const code = `
 import React, { Component } from "react";
 import Todo from "./components/todo"
@@ -49,8 +51,6 @@ class Box extends Component {
         <Test>
           <Highlight className="javascript">{code}</Highlight>
         </Test>
- 
-
       </div>
     );
   }
